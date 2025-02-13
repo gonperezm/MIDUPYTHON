@@ -59,8 +59,16 @@ print(f"el factorial del {numero_introducido} es {factorial}")
 # Si la contraseña es válida, imprime "Contraseña válida".
 print("\nEjercicio 4:")
 
+print("generador de contraseña")
+print("crea tu contraseña de 8 caracteres")
+contrasena=input("introduce aqui la primer contraseña\n")
 
+while len(contrasena)<8:
+    
+    print("has ingresado una contraseña de menos cacteres que los oslicitados")
+    contrasena=input("introduce aqui nuevamente\n")
 
+print(f"se ha validado la contraseña y es {contrasena}")
 
 
 
@@ -68,6 +76,22 @@ print("\nEjercicio 4:")
 # Pide al usuario que introduzca un número.
 # Imprime la tabla de multiplicar de ese número (del 1 al 10) usando un bucle while.
 print("\nEjercicio 5:")
+
+print("tablas de multiplicar")
+numero=int(input("introduce un numero para saber su tabla de multi\n"))
+while numero >=10 or numero<0:
+    numero=int(input("introduce un numero entre 1 y 10\n"))
+else:
+    print(f"has introducido \n{numero}")
+
+
+contador=1
+while contador<=10:
+    resultado=numero*contador
+    print(f"{numero} * {contador} = {resultado}")
+    contador+=1
+
+
 
 # Ejercicio 6: Números primos hasta N
 # Pide al usuario que introduzca un número entero positivo N.
