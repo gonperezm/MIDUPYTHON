@@ -39,3 +39,24 @@ resultado = battle(lista_a, lista_b)  # -> "x"
 # Algoritmos ocultos o cálculos o fórmulas
 # Programación dinámica: buscar una solución mas eficiente
 
+
+def battleroyal(lista_a, lista_b):
+    
+    sumaA=sum(lista_a)
+    sumaB=sum(lista_b)
+    
+    
+    if sumaA > sumaB:
+        resultadoA = sumaA - sumaB
+        print(f"el ganador es {resultadoA}a")
+    elif sumaA < sumaB:
+        resultadoB = sumaB - sumaA
+        print(f"el ganador es {resultadoB}b")
+    else:
+        resultadoC = 0
+        print(f"el ganador es X")    
+        
+    return 
+
+battleroyal([2, 4, 2],[3, 3, 4])
+battleroyal([4, 4, 4],[2, 8, 2])
